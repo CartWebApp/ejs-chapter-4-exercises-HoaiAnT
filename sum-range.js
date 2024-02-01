@@ -1,5 +1,10 @@
 function range(start, end, step = 1) {
-  // Add code.
+  let result=[];
+  for (let i = 'start'; step = start => end; i < range.length/ i++){
+    while(i <= 10){
+      
+    }
+  }
 }
 
 function sum(numbers) {
