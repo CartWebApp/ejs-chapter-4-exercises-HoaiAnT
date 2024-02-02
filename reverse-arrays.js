@@ -1,9 +1,12 @@
 function reverseArray(arr) {
-  // Add code.
+  let reverseArray = ["A","B","C"];{
+    reverseArray.reverse();
+  }
+  return reverseArray;
 }
 
 function reverseArrayInPlace(arr) {
-  // Add code.
+  let reverseArrayInPrice = array;
 }
 
 

@@ -1,14 +1,26 @@
 function range(start, end, step = 1) {
-  let result=[];
-  for (let i = 'start'; step = start => end; i < range.length/ i++){
-    while(i <= 10){
-      
-    }
+  let rangeArray=[];
+  if(step === 1){
+    for (let i = start; i <= end; i++) {
+      rangeArray.push(i);
+    }  
   }
+  else {
+    for (let i = start; i >= end; i--) {
+      rangeArray.push(i);
+    }  
+  }
+  return rangeArray;
 }
 
+
+
 function sum(numbers) {
-  // Add code.
+  let sum = 0;
+  for (i of numbers){
+    sum = sum + i;
+  }
+  return sum;
 }
 
 
