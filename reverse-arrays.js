@@ -6,7 +6,13 @@ function reverseArray(arr) {
 }
 
 function reverseArrayInPlace(arr) {
-  let reverseArrayInPrice = array;
+  let array = arr.length;
+  for (let i = 0; i < Math.floor(array.length/2); i++) {
+    console.log(i, array-i-1, arr[i], arr[len-i-1], arr);
+    let swap = arr[i];
+    arr[i] = arr[array-i-1];
+    arr[array-i-1] = swap;
+  }
 }
 
 

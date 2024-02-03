@@ -1,9 +1,25 @@
 function arrayToList(arr) {
-  // Add code.
+  let list = null; 
+  for (let i = arr.length - 1; i >= 0; i--) {
+    list = {value: arr[i], rest: list};
+  }
+  return list;
 }
 
 function listToArray(list, arr) {
-  // Add code.
+}
+
+function prepend(value, list) {
+  return {value: value, rest: list};
+}
+function nth (list, n ){
+  if (!list){
+    return null;
+  }
+  if (n === 0){
+    return list. value;
+  }
+  return nth(list.rest, n - 1);
 }
 
 // tests

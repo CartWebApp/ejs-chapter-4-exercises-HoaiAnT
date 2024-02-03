@@ -1,5 +1,21 @@
 function deepEqual(value, reference) {
-  // Add code.
+  if (value === reference){
+    return true;
+  }
+  if ((typeof value == "object" && value != null) && (typeof reference == "object" && reference != null)) {
+    if (Object.keys(value).length != Object.keys(reference).length)
+      return false;
+    }
+    for (var prop in value) {
+      if (reference.hasOwnProperty(prop))
+        return deepEqual(value[prop], reference[prop]);
+    }
+    if (value !== reference){
+      return false;
+    }
+    else{
+      return true;
+    }
 }
 
 
